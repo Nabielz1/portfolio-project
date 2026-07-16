@@ -53,7 +53,7 @@ export function Contact() {
                   <a
                     key={item.platform}
                     href={item.href}
-                    className="flex items-center justify-between rounded-2xl border border-white/10 bg-white/[0.04] px-4 py-3 text-[#A1A1AA] transition-colors hover:bg-white/[0.08] hover:text-white"
+                    className="flex items-center justify-between rounded-2xl border border-white/10 bg-white/4 px-4 py-3 text-[#A1A1AA] transition-colors hover:bg-white/8 hover:text-white"
                   >
                     <span className="flex items-center gap-3">
                       <SocialIcon platform={item.platform} className="text-base" />

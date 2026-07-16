@@ -21,13 +21,13 @@ export function Navbar() {
     <header
       className={cn(
         "sticky top-0 z-50 border-b border-transparent transition-all duration-200",
-        scrolled && "border-white/[0.08] bg-black/70 backdrop-blur-2xl",
+        scrolled && "border-white/8 bg-black/70 backdrop-blur-2xl",
       )}
     >
       <Container className="py-4">
         <div className="flex items-center justify-between gap-4">
           <a href="#home" className="group flex items-center gap-3 text-white">
-            <span className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/[0.05] text-sm font-semibold shadow-[inset_0_1px_0_rgba(255,255,255,0.08)]">
+            <span className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-sm font-semibold shadow-[inset_0_1px_0_rgba(255,255,255,0.08)]">
               {siteContent.brand.name.slice(0, 1)}
             </span>
             <span>
@@ -38,7 +38,7 @@ export function Navbar() {
             </span>
           </a>
 
-          <nav className="hidden items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] p-2 lg:flex shadow-[inset_0_1px_0_rgba(255,255,255,0.04)]">
+          <nav className="hidden items-center gap-2 rounded-full border border-white/10 bg-white/4 p-2 lg:flex shadow-[inset_0_1px_0_rgba(255,255,255,0.04)]">
             {siteContent.navigation.map((item) => {
               const sectionId = item.href.replace("#", "");
               const isActive = activeSection === sectionId;
@@ -51,7 +51,7 @@ export function Navbar() {
                     "rounded-full px-4 py-2 text-sm transition-colors",
                     isActive
                       ? "bg-white text-black shadow-sm"
-                      : "text-white/65 hover:bg-white/[0.06] hover:text-white",
+                      : "text-white/65 hover:bg-white/6 hover:text-white",
                   )}
                 >
                   {item.label}
